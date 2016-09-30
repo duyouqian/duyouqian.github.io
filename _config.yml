@@ -14,26 +14,31 @@ host: 192.168.56.101
 paginate: 20
 
 # Markdown Processors
-#markdown:    kramdown
+#markdown: kramdown
 #kramdown:
-# auto_ids:       true
-# footnote_nr:    1
-# entity_output:  as_char
-# toc_levels:     1..6
-# smart_quotes:   lsquo,rsquo,ldquo,rdquo
-# input:          GFM
-# hard_wrap:      false
-# footnote_nr:    1
+# input: GFM
+# extensions:
+#   - autolink
+#   - footnotes
+#   - smart
+# enable_coderay: true
+# syntax_highlighter: rouge
+# coderay:
+#   coderay_line_numbers:  nil
 markdown: redcarpet
 redcarpet:
  extensions:
-   - hard_wrap
-   - no_intra_emphasis
-   - autolink
-   - strikethrough
-   - tables
-   - lax_spacing
-#   - with_toc_data
+  - hard_wrap
+  - no_intra_emphasis
+  - autolink
+  - tables
+  - strikethrough
+  - superscript
+  - highlight
+  - prettify
+  - fenced_code_blocks
+  - lax_spacing
+   - with_toc_data
     
 
 title : ""
@@ -117,9 +122,6 @@ toc:
 
 #### Links
 links:
-  码农圈: https://coderq.com
-
-
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
