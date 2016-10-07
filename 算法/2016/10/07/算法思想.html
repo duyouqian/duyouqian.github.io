@@ -1,5 +1,5 @@
 
-        <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     
     
     
-    <title></title>
+    <title>算法思想 | </title>
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
@@ -20,14 +20,14 @@
     
     <meta name="description" content="page.description">
     
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     
-    <meta property="og:title" content="">
-    <meta property="og:url" content="/">
+    <meta property="og:title" content="算法思想">
+    <meta property="og:url" content="/%E7%AE%97%E6%B3%95/2016/10/07/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3">
     <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="算法思想:贪心,枚举,递归,搜索,回溯">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="">
+    <meta name="twitter:title" content="算法思想">
     <meta name="twitter:description" content="page.description">
     <meta name="twitter:creator" content="@">
     <link rel="publisher" href="">
@@ -86,104 +86,13 @@
 
     </header>
     <div id="container">
-      <div id="main">
+      
 
+
+<div id="main" class="post" itemscope itemprop="blogPost">
   
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/07/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98" title="约瑟夫问题" itemprop="url">约瑟夫问题</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="duyq" target="_blank" itemprop="author">duyq</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-07 00:00:00 +0800" itemprop="datePublished"> Published in 2016-10-07</time>
-    
-  </p>
-</header>
-
-    <div class="article-content">
-        
-        <blockquote>
-<p>Josephus问题是以弗拉维奥·约瑟夫斯命名的,它是一世纪的一名犹太历史学家.</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/07/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98#more">Read More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <!--
-  <%- list_categories(item.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-  }) %>
-  -->
-  
-  <a class="article-category-link" href="/categories/#数据结构">数据结构</a>
-  
-</div>
-
-
-  <div class="article-tags">
-  <!--
-  <% var tags = [];
-    item.tags.forEach(function(tag){
-      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-    }); %>-->
-  <span></span> <!--<%- tags.join('') %>-->
-  
-  
-  <a href="/tags/#数据结构">数据结构</a>
-  
-  <a href="/tags/#算法">算法</a>
-  
-  <a href="/tags/#约瑟夫问题">约瑟夫问题</a>
-  
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-    </article>
-
-
-
-
-
-
-  
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+	<article itemprop="articleBody"> 
+	<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/%E7%AE%97%E6%B3%95/2016/10/07/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3" title="算法思想" itemprop="url">算法思想</a>
@@ -198,22 +107,78 @@
   </p>
 </header>
 
-    <div class="article-content">
-        
-        <blockquote>
+	<div class="article-content">
+		
+		<blockquote>
 <p><strong>算法思想</strong>:贪心,枚举,递归,搜索,回溯</p>
 </blockquote>
 
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/%E7%AE%97%E6%B3%95/2016/10/07/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3#more">Read More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
+<h2>算法思想</h2>
+
+<ul>
+<li>贪心法
+
+<ol>
+<li>使用原则
+
+<ol>
+<li>局部最优解==&gt;全局最优解</li>
+<li>同一个问题,不同的贪心策略,可以产生不同的结果</li>
+<li>在思考时,可以先对问题的几个样例进行分析,得到直观的想法</li>
+<li>因为用贪心算法只能通过局部最优解来达到全局最优解,因此要注意判断问题是否合适用贪心算法,找到的解是否是最优解</li>
+<li>一个问题是否使用贪心算法,是可以通过数学归纳法来证明的.</li>
+</ol></li>
+<li>基本思路
+
+<ol>
+<li>建立数学模型来描述问题</li>
+<li>把求解的问题分成若干个子问题</li>
+<li>对每一个子问题求解,得到子问题的局部最优解</li>
+<li>把子问题的局部最优解合并成为原问题的最优解</li>
+</ol></li>
+</ol></li>
+<li>枚举法
+
+<ol>
+<li>特点:
+
+<ol>
+<li>算法简单,运算量大</li>
+<li>对全局使用穷举法,计算量过大</li>
+<li>对局部使用穷举法,其效果会是否显著</li>
+</ol></li>
+<li>优化策略
+
+<ol>
+<li>减少穷举次数
+
+<ol>
+<li>合理选择用于穷举的变量</li>
+<li>注意穷举的顺序</li>
+</ol></li>
+<li>减少判断每种情况的时间</li>
+</ol></li>
+</ol></li>
+<li><p>递归法</p>
+
+<blockquote>
+<p><strong>递归</strong>就是编写这样的一个特殊过程,该过程体中有一个语句用于调用过程自身称为递归调用</p>
+</blockquote></li>
+<li><p>回溯法</p>
+
+<ol>
+<li>基本思想
+
+<ol>
+<li>针对所给问题,定义问题的解空间</li>
+<li>确定易于搜索的解空间结构</li>
+<li>以深度优先方式搜索解空间,并在搜索过程中用剪枝函数避免无效搜索</li>
+</ol></li>
+</ol></li>
+</ul>
+  
+	</div>
+	<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -249,330 +214,51 @@
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
-
-</footer>
-    </article>
-
-
-
-
-
-
-  
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/06/%E7%BA%BF%E6%80%A7%E8%A1%A8" title="线性结构" itemprop="url">线性结构</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="duyq" target="_blank" itemprop="author">duyq</a>
-		
-  <p class="article-time">
-    <time datetime="2016-10-06 00:00:00 +0800" itemprop="datePublished"> Published in 2016-10-06</time>
-    
-  </p>
-</header>
-
-    <div class="article-content">
-        
-        <blockquote>
-<p><strong>线性结构</strong>包含线性表,顺序表,链表逻辑结构.</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/06/%E7%BA%BF%E6%80%A7%E8%A1%A8#more">Read More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <!--
-  <%- list_categories(item.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-  }) %>
-  -->
-  
-  <a class="article-category-link" href="/categories/#数据结构">数据结构</a>
-  
-</div>
-
-
-  <div class="article-tags">
-  <!--
-  <% var tags = [];
-    item.tags.forEach(function(tag){
-      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-    }); %>-->
-  <span></span> <!--<%- tags.join('') %>-->
-  
-  
-  <a href="/tags/#数据结构">数据结构</a>
-  
-  <a href="/tags/#线性结构">线性结构</a>
-  
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+	  <div data-url="/%E7%AE%97%E6%B3%95/2016/10/07/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3" data-title="算法思想 | " data-tsina="" class="share clearfix">
+	  </div>
 	
-</div>
-
-</footer>
-    </article>
+	</div>
 
 
-
-
-
-
-  
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/%E7%AE%97%E6%B3%95/2016/09/30/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90" title="算法分析" itemprop="url">算法分析</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="duyq" target="_blank" itemprop="author">duyq</a>
-		
-  <p class="article-time">
-    <time datetime="2016-09-30 00:00:00 +0800" itemprop="datePublished"> Published in 2016-09-30</time>
-    
-  </p>
-</header>
-
-    <div class="article-content">
-        
-        <blockquote>
-<p><strong>算法</strong>是为求解一个问题需要遵循的,被清楚指定的指令集合.</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/%E7%AE%97%E6%B3%95/2016/09/30/%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90#more">Read More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <!--
-  <%- list_categories(item.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-  }) %>
-  -->
-  
-  <a class="article-category-link" href="/categories/#算法">算法</a>
-  
-</div>
-
-
-  <div class="article-tags">
-  <!--
-  <% var tags = [];
-    item.tags.forEach(function(tag){
-      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-    }); %>-->
-  <span></span> <!--<%- tags.join('') %>-->
-  
-  
-  <a href="/tags/#算法">算法</a>
-  
-  <a href="/tags/#数据结构">数据结构</a>
-  
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+</footer>   
+	</article>
 	
-</div>
-
-</footer>
-    </article>
-
-
-
-
-
-
-  
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/latex/2016/09/30/latex_symbol" title="Latex 常见符号表" itemprop="url">Latex 常见符号表</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="duyq" target="_blank" itemprop="author">duyq</a>
-		
-  <p class="article-time">
-    <time datetime="2016-09-30 00:00:00 +0800" itemprop="datePublished"> Published in 2016-09-30</time>
-    
-  </p>
-</header>
-
-    <div class="article-content">
-        
-        <table><thead>
-<tr>
-<th>符号</th>
-<th>图形</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>下标:x_{ij}</td>
-<td>$x_{ij}$</td>
-</tr>
-<tr>
-<td>上标:x<sup>123</sup></td>
-<td>x<sup>123</sup></td>
-</tr>
-<tr>
-<td>小于:&lt;</td>
-<td>&lt;</td>
-</tr>
-<tr>
-<td>大于:&gt;</td>
-<td>&gt;</td>
-</tr>
-<tr>
-<td>等于:=</td>
-<td>=</td>
-</tr>
-<tr>
-<td>小于等于:\leq</td>
-<td>$\leq$</td>
-</tr>
-<tr>
-<td>大于等于:\geq</td>
-<td>$\geq$</td>
-</tr>
-<tr>
-<td>恒等于:\equiv</td>
-<td>$\equiv$</td>
-</tr>
-</tbody></table>
-
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/latex/2016/09/30/latex_symbol#more">Read More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <!--
-  <%- list_categories(item.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-  }) %>
-  -->
-  
-  <a class="article-category-link" href="/categories/#latex">latex</a>
-  
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/06/%E7%BA%BF%E6%80%A7%E8%A1%A8" title="线性结构">
+  <strong>上一篇：</strong><br/>
+  <span>
+  线性结构</span>
+</a>
 </div>
 
 
-  <div class="article-tags">
-  <!--
-  <% var tags = [];
-    item.tags.forEach(function(tag){
-      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-    }); %>-->
-  <span></span> <!--<%- tags.join('') %>-->
-  
-  
-  <a href="/tags/#latex">latex</a>
-  
-  </div>
-
+<div class="next">
+<a href="/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2016/10/07/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98"  title="约瑟夫问题">
+ <strong>下一篇：</strong><br/> 
+ <span>约瑟夫问题
+</span>
+</a>
 </div>
 
+</nav>
 
-
-
-<div class="comments-count">
 	
-</div>
 
-</footer>
-    </article>
+</div>  
 
-
-
-
-
-
-
-  <nav id="page-nav" class="clearfix">
-  <nav id="page-nav" class="clearfix">
-    
-    
-    <span class="page-number current">1</span>
-    
-    
-     
-  </nav>
-  </nav>
-
-</div>
       
       
       <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside toc-content">
+ 
+ <!--<%- toc(item.content) %>-->
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
@@ -731,6 +417,11 @@ $(document).ready(function(){
   });
   
   
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
   
   $(window).resize(function(){
     getSize(); 
@@ -746,7 +437,93 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.toc-content').toc();
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
 
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+/*
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      //$('.hoverqrcode').hide();
+  });
+  */
+});   
+</script>
 
 
 
@@ -839,5 +616,5 @@ $(document).ready(function(){
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
 
