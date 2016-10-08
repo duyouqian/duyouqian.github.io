@@ -124,7 +124,7 @@ toc:
 links:
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
+duoshuo_shortname: duyouqian    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
@@ -141,8 +141,9 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  ## sitecode: e5f4321357f96e0fcf22546ea93f37cc  e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  sitecode: ce7179cc16dfa5fefd5b9d1086977908 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id

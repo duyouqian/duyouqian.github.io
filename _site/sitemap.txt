@@ -1,10 +1,10 @@
 
 /404
 /atom.xml
-/archives/
 /about/
-/search/
+/archives/
 /categories/
+/search/
 /tags/
 /
 /rss.xml
